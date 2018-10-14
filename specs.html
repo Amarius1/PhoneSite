@@ -163,7 +163,7 @@ background: linear-gradient(0deg, rgba(78,78,78,1) 0%, rgba(129,129,129,1) 21%, 
 	<script>
 	 function wheel(event) {
       var delta = 0;
-      if (event.wheelDelta) {(delta = event.wheelDelta / 120);}
+      if (event.wheelDelta) {(delta = event.wheelDelta / 90);}
       else if (event.detail) {(delta = -event.detail / 3);}
 
       handle(delta);
@@ -172,7 +172,7 @@ background: linear-gradient(0deg, rgba(78,78,78,1) 0%, rgba(129,129,129,1) 21%, 
   }
 
   function handle(delta) {
-      var time = 400;
+      var time = 200;
       var distance = 200;
 
       $('html, body').stop().animate({
