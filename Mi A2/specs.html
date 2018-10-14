@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Specs</title>
+	
+	<link rel="icon" href="../resources/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+	<link href="../resources/style.css" type="text/css" rel="stylesheet">
+    <script src="https://rawgit.com/nathco/jQuery.scrollSpeed/master/jQuery.scrollSpeed.js"></script>
+	<script>
+	 $(function() {
+        $('div').delay(1000).fadeOut(400);
+        $.scrollSpeed(100, 800);
+    });
+    </script>
+</head>
+
+<body style="background: rgb(78,78,78);
+background: linear-gradient(0deg, rgba(78,78,78,1) 0%, rgba(129,129,129,1) 21%, rgba(161,161,161,1) 41%, rgba(231,231,231,1) 65%, rgba(250,250,250,1) 87%, rgba(255,255,255,1) 100%);">
+	
+	
+  <nav>
+    <div class="unselectable white nav-wrapper">
+      <a class="brand-logo right"><img style="position:relative; top: 9px; right: 7px;" src="https://www.android.com/static/2016/img/one/android-one-logo_1x.png" width="150"></a>
+		<H4 style="position:relative; left: 10px; bottom: 5px;" class="brand-logo left grey-text text-darken-1 ps-bold">Mi A2</H4>
+	  <ul style="position:relative; left: 50px;" id="nav-mobile" class="left hide-on-med-and-down">
+		<li><a href="index.html" class="tooltipped  btn-floating btn waves-effect waves-light blue lighten-1" data-delay="30"  data-position="bottom" data-tooltip="Go back"><i class="material-icons">keyboard_arrow_left</i></a></li>
+        <li><a href="specs.html" class="nav-text grey lighten-4 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-1 ps"><span class="nav-text-align">Buy</span></a></li>
+        <li><a href="https://www.gsmarena.com/xiaomi_mi_a2-review-1798p5.php" class="nav-text grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-1 ps"><span class="nav-text-align"> Camera Samples</span></a></li>
+        <li><a class="nav-text grey lighten-4 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-1 ps" href="https://www.gsmarena.com/xiaomi_mi_a2-review-1798p4.php"><span class="nav-text-align">Benchmarks</span></a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <H3 class=" grey-text text-darken-1 center ps-bold">Specs</H3>
+  <div class="container">
+	<ul id="specs" class="rounded collection with-header">
+		<li class="collection-header"><h5 class="ps-bold blue-text text-lighten-1" >~220EUR</h5></li>
+		<li v-repeat="specs" v-for="item in items" class="list-size grey-text text-darken-2 collection-item ps">
+			 {{ item.message }}
+		</li>
+    </ul>
+	</div><br>
+  
+  
+  
+  
+
+<footer class="white page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="grey-text text-darken-1 ps-bold">Device Hub</h5>
+                <p class="grey-text text-darken-1 ps">A website dedicated to collecting data in an elegant way about the best Android devices.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="grey-text text-darken-1 ps-bold">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-darken-1 ps" href="#!">Materialize</a></li>
+                  <li><a class="grey-text text-darken-1 ps" href="#!">Xiaomi</a></li>
+                  <li><a class="grey-text text-darken-1 ps" href="#!">Android One</a></li>
+                  <li><a class="grey-text text-darken-1 ps" href="#!">Android</a></li>
+                </ul>
+              </div>
+            </div>
+			
+          </div>
+		  <div style="position:relative; bottom: -50px" class="grey lighten-3 footer-copyright">
+            <div class="ps-bold container grey-text text-darken-1">
+           Made by Alexander
+            <a class="grey-text text-darken-1 right" href="#!">More Links</a>
+            </div>
+        </footer>
+
+		<div class="preloader-background">
+		<div class="preloader-wrapper big active">
+			<div class="spinner-layer spinner-blue-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div><div class="gap-patch">
+					<div class="circle"></div>
+				</div><div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>     
+	</div>
+
+
+	
+
+
+	
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<script>
+	var example1 = new Vue({
+  el: '#specs',
+  data: {
+    items: [
+		{ message: 'Network: GSM / CDMA / HSPA / LTE' },
+		{ message: 'Released: 2018, July' },
+		{ message: 'Dimensions: 158.7 x 75.4 x 7.3 mm (6.25 x 2.97 x 0.29 in)' },
+		{ message: 'Weight: 166g' },
+		{ message: 'Build: Front glass, aluminum unibody' },
+		{ message: 'SIM: Dual SIM (Nano-SIM, dual stand-by)' },
+		{ message: 'Screen: LTPS IPS LCD capacitive touchscreen, 5.99 inches, 92.6 cm2 (~77.4% screen-to-body ratio)' },
+		{ message: 'Screen Quality: 16M colors, 1500-to-one contrast ratio, 420nits peak brightness' },
+		{ message: 'Resolution: 1080 x 2160 pixels, 18:9 ratio (~403 ppi density)' },
+		{ message: 'Protection: Gorilla Glass 5' },
+		{ message: 'OS: Android 8.1 Oreo, Android One' },
+		{ message: 'Chipset: SDM660 14nm Snapdragon 660' },
+		{ message: 'CPU: Octa-core (4x2.2GHz Kryo260 Gold + 4x1.8GHz Kryo260 Silver)' },
+		{ message: 'GPU: Adreno 512' },
+		{ message: 'ISP: Spectra™ 160 image sensor processor' },
+		{ message: 'Modem: Qualcomm® Snapdragon™ X12 LTE' },
+		{ message: 'Peak Network Speed: 600Mbps Download / 150Mbps Upload' },
+		{ message: 'Codec Support: H.265 (HEVC), H.264 (AVC), VP8, VP9' },
+		{ message: 'Card Slot: No' },
+		{ message: 'Headphone Jack: No' },
+		{ message: 'Storage: 128 GB, 6 GB RAM or 32/64 GB, 4 GB RAM' },
+		{ message: 'Main Camera: 12 MP, f/1.75, 1/2.9", 1.25µm, Sony Exmor IMX486RS' },
+		{ message: 'Second Camera: 20 MP, f/1.8, 1/2.8", 1.0µm, Sony Exmor IMX376' },
+		{ message: 'Camera Features: Dual-LED flash, HDR, Panorama, ZSL, Hybrid Autofocus, Optical Zoom' },
+		{ message: 'Front Camera: 20 MP, f/2.2, 1/2.8", 1.0µm, Sony Exmor IMX376' },
+		{ message: 'Video: 2160p@30fps, 1080p@30fps (gyro-EIS), 1080p@120fps, 720p@240fps (planned)' },
+		{ message: 'WLAN: Wi-Fi 802.11 a/b/g/n/ac, dual-band, WiFi Direct, hotspot' },
+		{ message: 'Bluetooth: 5.0, A2DP, LE' },
+		{ message: 'GPS: Yes, with A-GPS, GLONASS, BDS' },
+		{ message: 'USB: 2.0, Type-C reversible connector, Quick Charge 3.0 & 4.0' },
+		{ message: 'Sensors: Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass' },
+		{ message: 'Battery: Non-removable Li-Po 3000mAh' },
+		{ message: 'Colors: Black, Gold, Blue, Red, Rose Gold' },
+		{ message: 'Sound: Voice 89dB / Noise 72dB / Ring 89dB' },
+    ]
+  }
+})
+	</script>
+	<script>
+	document.addEventListener("DOMContentLoaded", function(){
+	$('.preloader-background').delay(300).fadeOut('slow');
+	
+	$('.preloader-wrapper')
+		.delay(300)
+		.fadeOut();
+});
+	</script>
+	<script>
+	  AOS.init()
+	</script>
+	<script>
+	 function wheel(event) {
+      var delta = 0;
+      if (event.wheelDelta) {(delta = event.wheelDelta / 120);}
+      else if (event.detail) {(delta = -event.detail / 3);}
+
+      handle(delta);
+      if (event.preventDefault) {(event.preventDefault());}
+      event.returnValue = false;
+  }
+
+  function handle(delta) {
+      var time = 400;
+      var distance = 200;
+
+      $('html, body').stop().animate({
+          scrollTop: $(window).scrollTop() - (distance * delta)
+      }, time );
+  }
+
+  if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel, false);}
+    window.onmousewheel = document.onmousewheel = wheel;
+	</script>
+	<script>
+	var $root = $('html, body');
+
+$('a[href^="#"]').click(function() {
+    var href = $.attr(this, 'href');
+
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 500, function () {
+        window.location.hash = href;
+    });
+
+    return false;
+});
+	</script>
+	<script>
+	 document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+	</script>
+	<script>
+	$(function() {
+    var header = $(".issa");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 200) {
+            header.removeClass('issa').addClass("scale-out");
+
+        } else {
+            header.removeClass("scale-out").addClass('issa');
+			
+        }
+    });
+});
+	</script>
+	<script>
+	$(function() {
+    var header = $(".scale-out");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 600) {
+            header.removeClass('scale-out').addClass("issa2");
+
+        } else {
+            header.removeClass("issa2").addClass('scale-out');
+			
+        }
+    });
+});
+	</script>
+		
+</body>
+
+</html>
